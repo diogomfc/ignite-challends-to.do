@@ -27,8 +27,6 @@ export function TaskList() {
 
     setTasks([...tasks, newTask]);
     setNewTaskTitle("");
-
-    console.log(newTask);
   }
 
   function handleToggleTaskCompletion(id: number) {
@@ -43,8 +41,6 @@ export function TaskList() {
     );
 
     setTasks(taskIsComplete);
-
-    console.log(taskIsComplete);
   }
 
   function handleRemoveTask(id: number) {
